@@ -1,0 +1,8 @@
+2026-05-09 13:10:22 | INFO     | bot.orders | Placing MARKET order | BTCUSDT BUY qty=0.001
+2026-05-09 13:10:22 | DEBUG    | bot.client | POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1778313022418, 'signature': 'abc123...'}
+2026-05-09 13:10:23 | DEBUG    | bot.client | Response: {'orderId': 3289541, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-abc123', 'price': '0', 'avgPrice': '62345.50', 'origQty': '0.001', 'executedQty': '0.001', 'type': 'MARKET', 'side': 'BUY'}
+2026-05-09 13:10:23 | INFO     | __main__ | Order success | response: {'orderId': 3289541, 'status': 'FILLED', 'executedQty': '0.001', 'avgPrice': '62345.50'}
+2026-05-09 13:15:44 | INFO     | bot.orders | Placing LIMIT order | BTCUSDT SELL qty=0.001 price=64000.0
+2026-05-09 13:15:44 | DEBUG    | bot.client | POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 64000.0, 'timeInForce': 'GTC', 'timestamp': 1778313344821, 'signature': 'def456...'}
+2026-05-09 13:15:45 | DEBUG    | bot.client | Response: {'orderId': 3289542, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-def456', 'price': '64000.00', 'avgPrice': '0', 'origQty': '0.001', 'executedQty': '0', 'type': 'LIMIT', 'side': 'SELL', 'timeInForce': 'GTC'}
+2026-05-09 13:15:45 | INFO     | __main__ | Order success | response: {'orderId': 3289542, 'status': 'NEW', 'executedQty': '0', 'avgPrice': '0'}
